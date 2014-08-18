@@ -7,22 +7,27 @@
 
 div#wrapper {
     height:100%;
-    width:40%;
+    width:70%;
     margin:0 auto;
-    background-color:#98f215;
-    padding-top:150px;
+    padding-top:220px;
 }
 
 div#container {
-    width:200px;
+    width:250px;
     height:200px;
-    border: solid 1px black;
     margin:0 auto;
 }
 
 div#container form input {
     width:100%;
-    height:45px;
+    height:50px;
     text-indent:10px;
     font-size:18px;
+}
+
+div#container form input[type=submit] {
+    margin-top:18px;
+    background:rgba(222, 19, 238, 0.92);
+    border:none;
+    color:#2bf51b;
 }

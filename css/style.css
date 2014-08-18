@@ -7,11 +7,40 @@
 body{
     background-image:url('../images/colorful-bubbles-1.jpg');
 }
+header {
+    height: 100px;
+    background-color: green;
+    margin-bottom: 15px;
+}
 div#wrapper {
     height:100%;
     width:70%;
     margin:0 auto;
-    padding-top:50px;
+    background-color:rgba(255, 255, 255, 0.4);
+}
+#sidebars {
+    display: inline-block;
+    width: 220px;
+}
+.sidebar {
+    background-color: green;
+    width: 200px;
+    border-radius: 10px;
+    float: left;
+    margin: 10px;
+}
+    .sidebar ul li {
+        list-style-type: none;
+    }
+#main {
+    width: 75%;
+    vertical-align: top;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: justify;
+    background-color:rgba(255, 255, 255, 0.5);
 }
 button{
     position:absolute;
@@ -23,10 +52,16 @@ button{
     left:10px;
     top:10px;
 }
+header img#logo {
+    width: 175px;
+}
+header input {
+    float: right;
+}
 div#container {
     width:250px;
     height:200px;
-    margin:0 auto;
+    margin: 50px auto 0 auto;
 }
 div#bg {
     background-color:rgba(255, 255, 255, 0.3);
@@ -50,5 +85,14 @@ div#container form input[type=submit] {
     background:rgba(222, 19, 238, 0.9);
     border:none;
     color:#2bf51b;
-    text-shadow: 0px 0px 3px #fff;
+    text-shadow: 0 0 3px #fff;
+}
+footer {
+    position: absolute;
+    bottom:0;
+    width: 70%;
+    height: 20px;
+    margin: 0;
+    color: red;
+    background-color: green;
 }

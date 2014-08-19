@@ -5,7 +5,7 @@
     height:100%;
 }
 body{
-    background-image:url('../images/colorful-bubbles-1.jpg');
+    background-image:url('../images/artistic-bubbles_00219424.jpg');
 }
 header {
     height: 100px;
@@ -30,8 +30,12 @@ div#wrapper {
     margin: 10px;
 }
     .sidebar ul li {
+        list-style-type: circle;
+    }
+    .sidebar ul li:first-of-type{
         list-style-type: none;
     }
+
 #main {
     width: 75%;
     vertical-align: top;
@@ -61,7 +65,7 @@ header input {
 div#container {
     width:250px;
     height:200px;
-    margin: 50px auto 0 auto;
+    margin: 100px auto 0 auto;
 }
 div#bg {
     background-color:rgba(255, 255, 255, 0.3);
@@ -84,8 +88,7 @@ div#container form input[type=submit] {
     margin-top:18px;
     background:rgba(222, 19, 238, 0.9);
     border:none;
-    color:#2bf51b;
-    text-shadow: 0 0 3px #fff;
+    color: #ffffff;
 }
 footer {
     position: absolute;

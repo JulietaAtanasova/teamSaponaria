@@ -1,0 +1,39 @@
+input {
+    margin-top: 5px;
+}
+
+input[type='button'] {
+    width: 30px;
+    height: 30px;
+    font-family: sans;
+    vertical-align: top;
+}
+
+input.bold {
+    font-weight: bold;
+}
+
+input.italic {
+    font-style: italic;
+}
+
+input.underline {
+    text-decoration: underline;
+}
+
+textarea {
+    width: 90%;
+    height: 250px;
+    max-width: 95%;
+    display: block;
+}
+
+input[type='submit'] {
+    width: 100px;
+    height: 30px;
+}
+
+input#title {
+    width: 80%;
+    padding: 7px;
+}

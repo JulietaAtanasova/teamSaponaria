@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Bubble Blog</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/article-generator.css"/>
+    <script src="js/articleGenerator.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img id="logo" src="./images/cooltext1684135702.png" alt="logo"/>
+            <input type="search" placeholder="Search">
+        </header>
+        <div id="sidebars">
+            <aside class="sidebar">
+                <ul>
+                    <li>Categories</li>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                </ul>
+            </aside>
+            <aside class="sidebar">
+                <ul>
+                    <li>Popular Posts</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                    <li>Ipsum</li>
+                </ul>
+            </aside>
+            <aside class="sidebar">
+                <ul>
+                    <li>Tags</li>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                </ul>
+            </aside>
+        </div>
+        <div id="main">
+            <form action="ArticleGenerator.php" method="POST">
+                <label for="title">Title:</label>
+                <input type="text" id="title" class="title" name="title" placeholder="Title.."/>
+                <textarea id="article" name="article" placeholder="Type your article here.."></textarea>
+                <input type="button" class="bold" value="B" onclick="modifyText('bold')"/>
+                <input type="button" class="italic" value="I" onclick="modifyText('italic')"/>
+                <input type="button" class="underline" value="U" onclick="modifyText('underline')"/>
+                <input type="submit" value="Post"/>
+            </form>
+        </div>
+        <footer>
+            Copyright © 2014
+        </footer>
+    </div>
+</body>
+</html>

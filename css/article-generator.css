@@ -2,7 +2,7 @@ input {
     margin-top: 5px;
 }
 
-input[type='button'] {
+input.bold, input.italic, input.underline {
     width: 30px;
     height: 30px;
     font-family: sans;
@@ -21,7 +21,7 @@ input.underline {
     text-decoration: underline;
 }
 
-input[type='submit'] {
+input[type='submit'], input#save {
     width: 100px;
     height: 30px;
 }
@@ -71,7 +71,7 @@ label.btnLabel {
     margin-bottom: 5px;
 }
 
-select#fontSize, select#fontFamily {
+select#fontSize, select#fontFamily, select#heading {
     vertical-align: bottom;
     height: 30px;
 }

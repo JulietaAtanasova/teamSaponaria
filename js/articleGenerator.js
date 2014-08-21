@@ -37,3 +37,7 @@ function modifyText(action) {
     }
 
 }
+
+function saveChanges() {
+    document.getElementById('article').innerHTML = document.getElementById('textfield').innerHTML;
+}

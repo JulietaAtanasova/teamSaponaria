@@ -21,19 +21,63 @@ input.underline {
     text-decoration: underline;
 }
 
-textarea {
-    width: 90%;
-    height: 250px;
-    max-width: 95%;
-    display: block;
-}
-
 input[type='submit'] {
     width: 100px;
     height: 30px;
 }
 
 input#title {
-    width: 80%;
+    display: block;
     padding: 7px;
+}
+
+div#textfield {
+    background-color: #fff;
+    padding: 5px;
+    overflow-y: scroll;
+    height: 300px;
+    margin-top: 5px;
+}
+
+div#textfield h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+select#heading {
+    width: 32px;
+    height: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    vertical-align: bottom;
+}
+select#heading:after {
+    content: '▼';
+    position: absolute;
+    float: right;
+    left: 25px;
+    top: 25px;
+    z-index: 1000;
+    color: #000;
+    display: inline-block;
+}
+
+select#heading option {
+    font-weight: bold;
+}
+
+label.btnLabel {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 5px;
+}
+
+select#fontSize, select#fontFamily {
+    vertical-align: bottom;
+    height: 30px;
+}
+
+select#fontSize {
+    width: 32px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }

@@ -50,9 +50,8 @@
                     <input type="button" class="bold" value="B" onclick="modifyText('bold')"/>
                     <input type="button" class="italic" value="I" onclick="modifyText('italic')"/>
                     <input type="button" class="underline" value="U" onclick="modifyText('underline')"/>
-                    <label class="btnLabel">Heading:</label>
                     <select id="heading" onChange="modifyText('heading')">
-                        <option value="" selected></option>
+                        <option value="" selected>-</option>
                         <option value="h1">h1</option>
                         <option value="h2">h2</option>
                         <option value="h3">h3</option>
@@ -76,11 +75,13 @@
                         <option value="6">6</option>
                         <option value="7">7</option>
                     </select>
+                    <input type="button" id="link" onclick="modifyText('link')"/>
+                    <input type="button" id="unlink" onclick="modifyText('unlink')"/>
+                    <input type="button" id="image" onclick="modifyText('image')"/>
                 </div>
                 <div contenteditable="true" id="textfield"></div>
                 <textarea id="article" hidden="" name="article"></textarea>
-                <input type="button" id="save" value="Save" onclick="saveChanges()"/>
-                <input type="submit" value="Post"/>
+                <input type="submit" value="Post" onclick="saveChanges()"/>
             </form>
         </div>
         <footer>

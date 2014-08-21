@@ -34,6 +34,14 @@ function modifyText(action) {
         case 'fontSize':
             var size = document.getElementById('fontSize').value;
             document.execCommand("fontSize", false, size); break;
+        case 'link':
+            var link = prompt('Enter a hyperlink:');
+            document.execCommand('createLink', false, link); break;
+        case 'unlink':
+            document.execCommand("unlink", false, false); break;
+        case 'image':
+            var link = prompt('Enter the link for your image:');
+            document.execCommand('InsertImage',false, link); break;
     }
 
 }

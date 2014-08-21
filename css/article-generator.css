@@ -44,10 +44,8 @@ div#textfield h1, h2, h3, h4, h5 {
 }
 
 select#heading {
-    width: 32px;
+    width: 40px;
     height: 30px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     vertical-align: bottom;
 }
 select#heading:after {
@@ -80,4 +78,21 @@ select#fontSize {
     width: 32px;
     -webkit-appearance: none;
     -moz-appearance: none;
+}
+
+.toolbar > input[type='button'] {
+    width: 30px;
+    height: 30px;
+}
+
+input#link {
+    background: url('../images/link.png') no-repeat center;
+}
+
+input#unlink {
+    background: url('../images/unlink.png') no-repeat center;
+}
+
+input#image {
+    background: url('../images/img.png') no-repeat center;
 }

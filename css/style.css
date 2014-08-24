@@ -5,8 +5,11 @@
     height:100%;
 }
 body{
-    background-image:url('../images/artistic-bubbles_00219424.jpg');
-	background-size: 100%;
+    background: url('../images/artistic-bubbles.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 header {
     height: 100px;
@@ -39,7 +42,7 @@ div#wrapper {
 
 #main {
     width: 60%;
-    font-family: Calibri;
+    font-family: Calibri, Arial, sans-serif;
     vertical-align: top;
     margin: 10px;
     padding: 10px;
@@ -50,7 +53,10 @@ div#wrapper {
 }
 form#sign-up input[type=submit] {
     position:absolute;
-    background-color:#b6ff00;
+    background-color:rgba(209, 214, 231, 0.8);
+    color: #F25356;
+    font-weight: bold;
+    /*background-color:#b6ff00;*/
     border:none;
     width:90px;
     height:40px;
@@ -93,7 +99,7 @@ div#container form input {
 }
 div#container form input[type=submit] {
     margin-top:18px;
-    background:rgba(222, 19, 238, 0.9);
+    background:rgba(245, 87, 91, 0.9);
     border:none;
     color: #ffffff;
 }

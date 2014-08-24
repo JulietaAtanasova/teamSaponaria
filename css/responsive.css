@@ -1,0 +1,58 @@
+@media only screen and (max-width: 1400px) {
+    .mainHeader{
+        display: inline-block;
+    }
+    .mainHeader nav {
+        margin: 0 auto 20px auto;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .body {
+        width: 90%;
+        font-size: 95%;
+    }
+    .mainHeader nav {
+        height: 300px;
+    }
+
+    .mainHeader nav ul {
+        padding-left: 0;
+    }
+
+    .mainHeader nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .mainHeader nav ul li:first-of-type{
+        margin: 5px auto 10px auto;
+        padding: 0;
+    }
+
+    .mainHeader nav a:link, .mainHeader nav a:visited {
+        height: 20px;
+        padding: 10px 25px;
+        display: block;
+    }
+
+    .topcontent, .bottomcontent {
+        margin-bottom: 5%;
+    }
+
+    .content {
+        width: 100%;
+    }
+    .post-info {
+        display: none;
+    }
+    .sidebars{
+        width: 100%;
+    }
+    .top-sidebar, .middle-sidebar, .bottom-sidebar {
+        margin: 2% 0;
+        padding: 0 2%;
+    }
+    .top-sidebar p, .middle-sidebar p, .bottom-sidebar p{
+        margin-right:40px;
+    }
+
+}

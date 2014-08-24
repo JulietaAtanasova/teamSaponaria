@@ -1,92 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Bubble Blog</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/article-generator.css"/>
-    <script src="js/articleGenerator.js"></script>
-</head>
-<body>
-    <div id="wrapper">
-        <header>
-            <img id="logo" src="./images/cooltext1684135702.png" alt="logo"/>
-            <input type="search" placeholder="Search">
-        </header>
-        <div id="sidebars">
-            <aside class="sidebar">
-                <ul>
-                    <li>Categories</li>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li>Third</li>
-                    <li>Fourth</li>
-                </ul>
-            </aside>
-            <aside class="sidebar">
-                <ul>
-                    <li>Popular Posts</li>
-                    <li>Second</li>
-                    <li>Third</li>
-                    <li>Fourth</li>
-                    <li>Ipsum</li>
-                </ul>
-            </aside>
-            <aside class="sidebar">
-                <ul>
-                    <li>Tags</li>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li>Third</li>
-                    <li>Fourth</li>
-                </ul>
-            </aside>
+<div id="main">
+    <form action="ArticleGenerator.php" method="post">
+        <label for="title">Post Title:</label>
+        <input type="text" id="title" class="title" name="title" placeholder="Title..."/>
+        <div class="toolbar">
+            <input type="button" class="bold" value="B" onclick="modifyText('bold')"/>
+            <input type="button" class="italic" value="I" onclick="modifyText('italic')"/>
+            <input type="button" class="underline" value="U" onclick="modifyText('underline')"/>
+            <select id="heading" onChange="modifyText('heading')">
+                <option value="" selected>-</option>
+                <option value="h1">h1</option>
+                <option value="h2">h2</option>
+                <option value="h3">h3</option>
+                <option value="h4">h4</option>
+                <option value="h5">h5</option>
+            </select>
+            <select id="fontFamily" onChange="modifyText('fontFamily')">
+                <option value="Calibri" selected>Calibri</option>
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Helvetica">Helvetica</option>
+                <option value="Georgia">Georgia</option>
+                <option value="sans-serif">sans-serif</option>
+            </select>
+            <select id="fontSize" onChange="modifyText('fontSize')">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <input type="button" id="link" onclick="modifyText('link')"/>
+            <input type="button" id="unlink" onclick="modifyText('unlink')"/>
+            <input type="button" id="image" onclick="modifyText('image')"/>
         </div>
-        <div id="main">
-            <form action="ArticleGenerator.php" method="post">
-                <label for="title">Title:</label>
-                <input type="text" id="title" class="title" name="title" placeholder="Title.."/>
-                <div class="toolbar">
-                    <input type="button" class="bold" value="B" onclick="modifyText('bold')"/>
-                    <input type="button" class="italic" value="I" onclick="modifyText('italic')"/>
-                    <input type="button" class="underline" value="U" onclick="modifyText('underline')"/>
-                    <select id="heading" onChange="modifyText('heading')">
-                        <option value="" selected>-</option>
-                        <option value="h1">h1</option>
-                        <option value="h2">h2</option>
-                        <option value="h3">h3</option>
-                        <option value="h4">h4</option>
-                        <option value="h5">h5</option>
-                    </select>
-                    <select id="fontFamily" onChange="modifyText('fontFamily')">
-                        <option value="Calibri" selected>Calibri</option>
-                        <option value="Arial">Arial</option>
-                        <option value="Verdana">Verdana</option>
-                        <option value="Helvetica">Helvetica</option>
-                        <option value="Georgia">Georgia</option>
-                        <option value="sans-serif">sans-serif</option>
-                    </select>
-                    <select id="fontSize" onChange="modifyText('fontSize')">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3" selected>3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                    </select>
-                    <input type="button" id="link" onclick="modifyText('link')"/>
-                    <input type="button" id="unlink" onclick="modifyText('unlink')"/>
-                    <input type="button" id="image" onclick="modifyText('image')"/>
-                </div>
-                <div contenteditable="true" id="textfield"></div>
-                <textarea id="article" hidden="" name="article"></textarea>
-                <input type="submit" value="Post" onclick="saveChanges()"/>
-            </form>
-        </div>
-        <footer>
-            Copyright © 2014
-        </footer>
-    </div>
-</body>
-</html>
+        <div contenteditable="true" id="textfield"></div>
+        <textarea id="article" hidden="" name="article"></textarea>
+        <input type="submit" value="Post" onclick="saveChanges()"/>
+    </form>
+</div>

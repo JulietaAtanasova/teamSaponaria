@@ -1,0 +1,2 @@
+[23-Aug-2014 17:09:34 UTC] PHP Fatal error:  Call to a member function lastArticles() on a non-object in /home/alekbqus/public_html/blog/posts.php on line 3
+[24-Aug-2014 17:48:58 UTC] PHP Fatal error:  Call to a member function lastArticles() on a non-object in /home/alekbqus/public_html/blog/posts.php on line 3

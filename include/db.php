@@ -1,7 +1,7 @@
 <?php
-define('MYSQL_HOST','localhost');
-define('MYSQL_USER','alekbqus_blog');
-define('MYSQL_PASSWORD','softuni2014');
-define('MYSQL_DB','alekbqus_blog');
+if (!defined('MYSQL_HOST')) 		define('MYSQL_HOST','localhost');
+if (!defined('MYSQL_USER')) 		define('MYSQL_USER','root');
+if (!defined('MYSQL_PASSWORD'))		define('MYSQL_PASSWORD','');
+if (!defined('MYSQL_DB')) 			define('MYSQL_DB','alekbqus_blog');
 
 ?>

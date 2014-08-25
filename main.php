@@ -1,5 +1,11 @@
 <?php
 include 'include/auth.php';
+mysql_set_charset('utf8');
+include 'class/Select.class.php';
+include 'class/Insert.class.php';
+
+$select = new Select();
+$insert = new Insert();
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,8 +19,9 @@ include 'include/auth.php';
 <body>
     <div id="wrapper">
         <header>
-            <img id="logo" src="./images/cooltext1684135702.png" alt="logo"/>
+            <a href="main.php"><img id="logo" src="./images/cooltext1687891902.png" alt="logo"/></a>
             <input type="search" placeholder="Search">
+			<a href="?p=1"><input type="button" value="" class="addArticle" /></a>
         </header>
         <div id="sidebars">
             <aside class="sidebar">
@@ -27,13 +34,8 @@ include 'include/auth.php';
                 </ul>
             </aside>
             <aside class="sidebar">
-                <ul>
-                    <li>Popular Posts</li>
-                    <li>Second</li>
-                    <li>Third</li>
-                    <li>Fourth</li>
-                    <li>Ipsum</li>
-                </ul>
+                <h2>Popular posts:</h2>
+				<?php include 'popularPosts.php'; ?>
             </aside>
             <aside class="sidebar">
                 <ul>
@@ -48,16 +50,14 @@ include 'include/auth.php';
         <div id="main">
 		
 <?php
-mysql_set_charset('utf8');
-include 'class/Select.class.php';
-include 'class/Insert.class.php';
 
-$select = new Select();
-$insert = new Insert();
 
-if ( $_GET['p'] == 1 ) 	{ include 'article.php'; }
-if ( $_GET['p'] == 2 ) 	{ include 'view.php'; }
-if ( $_GET['p'] == '' ) { include 'posts.php'; }
+if ( isset ( $_GET['p'] ) ) {
+	if ( $_GET['p'] == 1 ) 	include 'article.php'; 
+	if ( $_GET['p'] == 2 ) 	include 'view.php'; 
+} else {
+	include 'posts.php';
+}
 
 ?>
         </div>

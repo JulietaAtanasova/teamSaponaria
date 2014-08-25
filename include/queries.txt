@@ -69,3 +69,83 @@
 1@24.08.2014@20:22:47@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),1)
 1@24.08.2014@20:26:06@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
 1@24.08.2014@20:26:11@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '2'
+1@25.08.2014@19:27:18@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:28:13@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:29:01@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:29:16@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:30:20@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:30:44@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:31:00@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:35:25@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '1'
+1@25.08.2014@19:35:25@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:35:30@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:35:34@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '1'
+1@25.08.2014@19:35:34@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:37:17@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '1'
+1@25.08.2014@19:37:21@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:37:28@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '3'
+1@25.08.2014@19:37:31@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:40:51@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:40:52@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '3'
+1@25.08.2014@19:40:54@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:40:55@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '2'
+1@25.08.2014@19:40:58@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:41:00@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '1'
+1@25.08.2014@19:41:08@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:43:26@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:45:49@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@25.08.2014@19:45:49@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'Sample article','see article<div><br></div><div><br></div><div><br></div><div>test it</div><div><br></div><div>..</div><div><br></div><div>..</div><div><img><img src="http://www.codeforest.net/wp-content/uploads/2010/09/php.png"><br></div>',NOW())
+1@25.08.2014@19:45:49@SELECT post_id FROM post WHERE action_id = (SELECT action_id FROM action WHERE user_id = '1' ORDER BY action_id DESC LIMIT 0,1)
+1@25.08.2014@19:45:49@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '7'
+1@25.08.2014@19:46:49@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@25.08.2014@19:46:49@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'Sample article','see article<div><br></div><div><br></div><div><br></div><div>test it</div><div><br></div><div>..</div><div><br></div><div>..</div><div><img><img src="http://www.codeforest.net/wp-content/uploads/2010/09/php.png"><br></div>',NOW())
+1@25.08.2014@19:46:49@SELECT post_id FROM post WHERE action_id = (SELECT action_id FROM action WHERE user_id = '1' ORDER BY action_id DESC LIMIT 0,1)
+1@25.08.2014@19:46:49@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '8'
+1@25.08.2014@19:46:58@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:47:09@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '7'
+1@25.08.2014@19:47:11@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:47:19@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '2'
+1@25.08.2014@19:47:23@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:58:55@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:58:56@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '2'
+1@25.08.2014@19:58:57@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:58:59@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '8'
+1@25.08.2014@19:59:01@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:59:03@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '3'
+1@25.08.2014@19:59:06@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@19:59:06@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@20:00:01@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '8'
+1@25.08.2014@20:00:05@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@20:01:48@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:01:48@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@20:02:03@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:02:03@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '1'
+1@25.08.2014@20:02:06@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:02:06@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@20:02:08@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:02:08@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '3'
+1@25.08.2014@20:02:10@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:02:10@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@20:02:12@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:02:12@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '1'
+1@25.08.2014@20:02:18@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:02:18@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@20:07:47@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:07:47@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@20:07:48@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:07:48@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@20:08:54@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:08:54@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@20:09:10@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:09:10@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@20:09:10@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:09:10@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@20:09:59@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:09:59@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@20:10:07@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:10:07@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@20:10:10@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:10:10@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@25.08.2014@20:10:13@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:10:17@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,5
+1@25.08.2014@20:10:17@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10

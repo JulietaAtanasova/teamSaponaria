@@ -17,7 +17,6 @@ header {
     margin-bottom: 15px;
 }
 div#wrapper {
-    height:100%;
     width:70%;
     margin:0 auto;
     background-color:rgba(255, 255, 255, 0.4);
@@ -40,7 +39,7 @@ div#wrapper {
         list-style-type: none;
     }
 
-#main {
+div#main {
     width: 60%;
     font-family: Calibri, Arial, sans-serif;
     vertical-align: top;
@@ -50,6 +49,13 @@ div#wrapper {
     display: inline-block;
     text-align: justify;
     background-color:rgba(255, 255, 255, 0.5);
+}
+
+input.addArticle {
+	background: url('../images/plus.png') no-repeat center;
+	border: none;
+	width: 50px;
+	height: 50px;
 }
 form#sign-up input[type=submit] {
     position:absolute;
@@ -105,7 +111,6 @@ div#container form input[type=submit] {
 }
 footer {
     position: absolute;
-    bottom:0;
     width: 70%;
     height: 20px;
     margin: 0;

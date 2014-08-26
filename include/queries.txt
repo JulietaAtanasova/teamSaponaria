@@ -430,3 +430,93 @@
 1@26.08.2014@18:43:36@INSERT INTO `comment` (`post_id`,`action_id`,`comment_author`,`comment_name`,`comment_text`,`comment_date`) VALUES (2,3,"1",'AAAAAAAAAAAAAAAA','AAAAAAAAAAAAAAAAA',NOW())
 1@26.08.2014@18:43:38@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '2'
 1@26.08.2014@18:43:38@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '2'
+1@26.08.2014@18:50:46@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@20:28:30@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@20:28:32@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '7'
+1@26.08.2014@20:28:32@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '7'
+1@26.08.2014@20:28:37@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@20:31:21@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),1)
+1@26.08.2014@20:31:21@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@20:34:13@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),1)
+1@26.08.2014@20:34:13@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@20:42:51@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),1)
+1@26.08.2014@20:42:52@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@20:52:11@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@20:52:17@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@20:52:37@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '1'
+1@26.08.2014@20:52:37@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '1'
+1@26.08.2014@20:52:46@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@20:52:48@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '2'
+1@26.08.2014@20:52:48@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '2'
+1@26.08.2014@20:54:49@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@20:57:01@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@20:57:03@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@21:00:32@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@21:01:28@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+@26.08.2014@21:01:54@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,,NOW(),2)
+@26.08.2014@21:01:54@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID =  ORDER BY ACTION_ID DESC LIMIT 1),"",'','',NOW())
+1@26.08.2014@21:01:55@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@21:02:06@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:02:06@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'','',NOW())
+1@26.08.2014@21:02:07@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@21:04:32@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:04:32@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'Fck yeah','Let's get this shit going!',NOW())
+1@26.08.2014@21:04:33@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@21:04:37@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@21:08:35@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:08:35@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'Fck it','Let's get this shit going!',NOW())
+1@26.08.2014@21:08:36@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@21:08:42@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@21:10:27@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:10:27@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'Fck it','sadsadsadsadsad',NOW())
+1@26.08.2014@21:10:35@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@21:11:45@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:11:45@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'Lol','Posy',NOW())
+1@26.08.2014@21:12:28@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:12:28@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'Post #2','page it',NOW())
+1@26.08.2014@21:12:31@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@21:12:36@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '12'
+1@26.08.2014@21:12:36@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '12'
+1@26.08.2014@21:12:38@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@21:14:41@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+			ORDER BY post_date DESC
+1@26.08.2014@21:16:17@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10ORDER BY post_date DESC
+1@26.08.2014@21:16:17@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10ORDER BY post_date DESC
+1@26.08.2014@21:18:30@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10ORDER BY T0.post_date DESC
+1@26.08.2014@21:18:39@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id LIMIT 0,10
+1@26.08.2014@21:19:31@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESCLIMIT 0,10
+1@26.08.2014@21:20:42@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESCLIMIT 0,10
+1@26.08.2014@21:21:27@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@26.08.2014@21:24:48@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '7'
+1@26.08.2014@21:24:48@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '7'
+1@26.08.2014@21:24:51@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@26.08.2014@21:34:28@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:34:28@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'asdasd','TEXT',NOW())
+1@26.08.2014@21:36:13@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:36:13@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'Title','TEXT',NOW())
+1@26.08.2014@21:36:42@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:36:42@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'Titles','TEXT',NOW())
+1@26.08.2014@21:37:42@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:37:42@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'Titles','TEXT',NOW())
+1@26.08.2014@21:37:51@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:37:51@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'2231','asdsad',NOW())
+1@26.08.2014@21:38:50@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:38:50@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'2231','asdsad',NOW())
+1@26.08.2014@21:39:13@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:39:13@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'2231','TEXT',NOW())
+1@26.08.2014@21:39:54@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:39:54@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'2231','TEXT',NOW())
+1@26.08.2014@21:42:13@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:42:13@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'Titles','',NOW())
+1@26.08.2014@21:42:57@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:42:57@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'Titles','',NOW())
+1@26.08.2014@21:44:28@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:44:28@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'Title','',NOW())
+1@26.08.2014@21:44:57@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:44:57@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'Title','',NOW())
+1@26.08.2014@21:46:39@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:46:39@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'asd','sadasdas',NOW())
+1@26.08.2014@21:48:31@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:48:31@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'asd','sadasdas',NOW())
+1@26.08.2014@21:48:46@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
+1@26.08.2014@21:48:46@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'asd','sadasdas',NOW())

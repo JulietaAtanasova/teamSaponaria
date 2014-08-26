@@ -1,20 +1,3 @@
-//function modifyText($action) {
-//    var text = document.getElementById('article');
-//    var startPos = text.selectionStart;
-//    var endPos = text.selectionEnd;
-//    var tag;
-//    switch ($action) {
-//        case 'bold': tag = 'b'; break;
-//        case 'italic': tag = 'i'; break;
-//        case 'underline': tag = 'u'; break;
-//        default: return;
-//    }
-//    var value = text.value;
-//    text.value = value.slice(0, startPos) + "<" + tag + ">"  + value.slice(startPos, endPos)
-//    + "</" + tag + ">" + value.slice(endPos);
-//    text.selectionStart = endPos + (tag.length * 2) + 5;
-//}
-
 function modifyText(action) {
     switch (action) {
         case 'bold': document.execCommand("bold", false); break;
@@ -48,4 +31,7 @@ function modifyText(action) {
 
 function saveChanges() {
     document.getElementById('article').innerHTML = document.getElementById('textfield').innerHTML;
+	document.getElementById('postTags').value = document.getElementById('addTag').value;
+	document.getElementById('postCategories').value = document.getElementById('addCategory').value;
+	document.getElementById('submitForm').submit();
 }

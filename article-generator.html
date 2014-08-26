@@ -1,5 +1,5 @@
 <div id="main">
-    <form action="ArticleGenerator.php" method="post">
+    <form action="ArticleGenerator.php" method="post" id="submitForm">
         <label for="title">Post Title:</label>
         <input type="text" id="title" class="title" name="title" placeholder="Title..."/>
         <div class="toolbar">
@@ -37,6 +37,8 @@
         </div>
         <div contenteditable="true" id="textfield"></div>
         <textarea id="article" hidden="" name="article"></textarea>
-        <input type="submit" value="Post" onclick="saveChanges()"/>
+		<input type="hidden" name="tags" id="postTags"/>
+		<input type="hidden" name="categories" id="postCategories"/>
+        <input type="button" value="Post" onclick="saveChanges()"/>
     </form>
 </div>

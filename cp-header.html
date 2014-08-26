@@ -1,10 +1,16 @@
+<?php 
+session_start();
+if (!isset($_SESSION['user_id']) || $_SESSION['user_type_id'] !== 2) {
+	die('Unauthorized access!');
+}
+?> 
 <header class="mainHeader">
     <nav><ul>
         <li><a href="control-panel.php"><img src="images/Bubble_Blog_Icon_white.png"/></a></li>
-        <li class="active"><a href="#">User Name &blacktriangledown;</a>
+        <li class="active"><a href="#"><?= $_SESSION['username']; ?> &blacktriangledown;</a>
             <ul class="dropdown">
                 <li><a href="main.php">View Blog</a></li>
-                <li><a href="index.php">Sign Out</a></li>
+                <li><a href="logout.php">Sign Out</a></li>
             </ul>
         </li>
         <li><a href="control-panel.php">All Posts</a></li>

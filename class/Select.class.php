@@ -40,6 +40,7 @@ class Select {
 			"SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username " . 
 			"FROM post T0 " .
 			"LEFT JOIN user T1 ON T0.user_id = T1.user_id " . 
+			"ORDER BY T0.post_date DESC " .
 			"LIMIT 0," . $count;
 		return $this->mysqlRun($query);
 	}

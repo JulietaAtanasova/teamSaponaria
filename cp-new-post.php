@@ -37,32 +37,20 @@ require('cp-header.html');
         <aside class="top-sidebar">
             <article>
                 <h3>Tags</h3>
-                <p><input type="text" name="addTag" id="addTag" placeholder="Add A Tag" /></p>
+                <p><input type="text" name="tgs" id="addTag" placeholder="Add A Tag" /></p>
                 <p></p>
             </article>
         </aside>
-
         <aside class="middle-sidebar">
             <article>
                 <h3>Categories</h3>
-                <p><input type="text" name="addCategory" placeholder="Add Another Category" /></p>
+                <p><input type="text" name="cats" id="addCategory" placeholder="Add Another Category" /></p>
                 <ul>
                     <li><input type="checkbox">First Category</li>
                     <li><input type="checkbox">Second Category</li>
                     <li><input type="checkbox">Third Category</li>
                     <li><input type="checkbox">Fourth Category</li>
                 </ul>
-            </article>
-        </aside>
-
-        <aside class="bottom-sidebar">
-            <article>
-                <h3>Other settings</h3>
-                <h5>Author: </h5>
-                <p><input type="text" name="addAuthor" placeholder="Enter a author"/></p>
-                <p><input type="checkbox" name="authorName" checked/>User Name</p>
-                <h5>Comments:</h5>
-                <p><input type="checkbox" name="allowComments" checked/>Allow Comments</p>
             </article>
         </aside>
     </div>

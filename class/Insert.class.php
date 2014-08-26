@@ -48,7 +48,7 @@ class Insert {
 	}
 
 	// Вмъкване на нова статия.
-	function post($post_name, $post_text) {
+	function post($post_name, $post_text, $category) {
 		
 		$this->mysqlInsert('post', array(
 			'post_id' 			=> 'NULL',

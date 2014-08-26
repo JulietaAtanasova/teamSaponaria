@@ -1,0 +1,8 @@
+<form class="addComment" method='post' action='addComment.php'>
+	<label>Title:</label>
+	<input type='text' class="inputTitle" name='commentTitle'/>
+	<label>Comment:</label>
+	<textarea class="inputContent" name='commentText'></textarea>
+	<input type='hidden' name='post_id' value='<?= $_GET['postId']?>' />
+	<input type='submit' value='SUBMIT'/>
+</form>

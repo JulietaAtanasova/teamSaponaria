@@ -37,10 +37,10 @@ if (isset($_POST['submit'])) {
 		$insert = new Insert();
 		$insert->action(1);
 		
-		header('Refresh: 0; URL=main.php?p=1');
+		header('Refresh: 0; URL=main.php');
 		echo '<p>Успешна регистрация!</p>';
 		echo '<p>Ако Вашият броузър не ви прехвърли автоматично, моля ' .
-			'<a href="main.php?p=1">натиснете тук</a>.</p>';
+			'<a href="main.php">натиснете тук</a>.</p>';
 		mysql_free_result($result);
 		mysql_close($db);
 		die();

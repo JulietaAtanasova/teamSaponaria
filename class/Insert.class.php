@@ -76,6 +76,17 @@ class Insert {
 		));
 			
 	}
-
+	function comment($comment_name, $comment_text, $post_id) {
+		
+		$this->mysqlInsert('comment', array(
+		'post_id' 			=> $post_id,
+			'action_id' 		=> '3',
+			'comment_author' 	=> '"' . $_SESSION['user_id'] . '"',
+			'comment_name' 		=> "'" . $comment_name. "'",
+			'comment_text' 		=> "'" . $comment_text. "'",
+			'comment_date' 		=> 'NOW()',
+		));
+			
+	}
 }
 

@@ -35,13 +35,16 @@ class Select {
 			"WHERE T0.post_id = '" . $post_id . "'";
 		return $this->mysqlRun($query);
 	}
-	
 	function lastArticles($count) {
 		$query = 
 			"SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username " . 
 			"FROM post T0 " .
 			"LEFT JOIN user T1 ON T0.user_id = T1.user_id " . 
 			"LIMIT 0," . $count;
+		return $this->mysqlRun($query);
+	}
+	function getComments($post_id) {
+		$query = "SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '" . $post_id . "'";
 		return $this->mysqlRun($query);
 	}
 

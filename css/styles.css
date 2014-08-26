@@ -1,17 +1,25 @@
+html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
 body {
 	color: #000305;
 	font-size: 87.5%; /* Base font size: 14px */
 	font-family: Helvetica , Arial, sans-serif;
 	line-height: 1.429;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	text-align: left;
-}
-	
-.body {
-	clear: both; 
-	margin: 0 auto; 
+    height: 100%;
 	width: 70%;
+    clear: both;
+}
+
+.wrapper{
+    width: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 h2 {font-size: 1.571em}	/* 22px */
@@ -26,7 +34,6 @@ h2, h3, h4, h5, h6 {
 	margin-bottom: .8em;
 }
 
-/* ======= Anchor style ====== */
 a {
 	outline: 0;
 }
@@ -48,7 +55,6 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
-/* ===== Main Navigation =====  */
 .mainHeader:after{
     content: "";
     display: block;
@@ -78,24 +84,32 @@ a:hover, a:active {
             clear: both;
         }
         .mainHeader nav ul ul{
-            background: #5f6975;
+            background: #666666;
             border-radius: 0;
             padding: 0;
             position: absolute;
             top: 100%;
             display: none;
+            width: 20%;
         }
-        .mainHeader nav ul ul li {
-            float: none;
-            border-top: 1px solid #6b727c;
-            border-bottom: 1px solid #575f6a;
-            position: relative;
-            display: block;
-        }
-        .mainHeader nav ul ul li a{
-            padding: 15px 30px;
-            color: #fff;
-        }
+            .mainHeader nav ul ul li {
+                float: none;
+                position: relative;
+                display: block;
+            }
+                .mainHeader nav ul ul li a{
+                    padding: 10px 10px;
+                    color: #FFFFFF;
+                }
+                .mainHeader nav .active ul a:link{
+                    background: none;
+                }
+                .mainHeader nav .active ul a:hover{
+                    background-color: #64A9E0;
+                    border-radius: 0;
+                    width: 60%;
+                }
+
         .mainHeader nav ul li {
             float: left;
             display: inline;
@@ -128,15 +142,13 @@ a:hover, a:active {
     .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
         background: #64A9E0;
         color: #FFFFFF;
-        text-shadow: none !important;
+        text-shadow: none;
     }
-
-
-/* ======= Content Area ====== */
 
 .mainContent {
 	overflow: hidden;
 	line-height: 25px;
+    padding-bottom: 7%;
 }
 
 .topcontent {
@@ -144,6 +156,18 @@ a:hover, a:active {
 	padding: 3% 5%;	
 	margin-bottom: 3%;
 }
+    .topcontent input, .topcontent textarea{
+        margin-top: 5px;
+        padding: 1%;
+        width: 60%;
+        box-sizing: border-box;
+    }
+
+    .topcontent textarea{
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07) inset;
+        overflow: auto;
+        height: 150px;
+    }
 
 .bottomcontent {
 	background-color: #FFFFFF;
@@ -160,8 +184,39 @@ a:hover, a:active {
 	color: #999999;
 	font-size: 85%;
 }
-
-/* ======== Sidebar ========== */
+.column{
+    display: inline-block;
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+}
+    .column ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .column input[type=button]{
+        background-color: #64A9E0;
+        color: #FFFFFF;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+    }
+    .column input[type=text],.column textarea {
+        width: 60%;
+    }
+    .column textarea{
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07) inset;
+        overflow: auto;
+        height: 150px;
+    }
+.comments {
+    width: 90%;
+    float: left;
+    margin-left: 5%;
+}
+.table{
+    width: 100%;
+}
 .sidebars{
     display: inline-block;
     width: 20%;
@@ -214,19 +269,20 @@ a:hover, a:active {
         padding: 0;
         margin: 0;
     }
-/* ========= Footer ========== */
 
 .mainFooter {
 	width: 100%;
 	float: left;
-	margin-top: 2%;
-	margin-bottom: 2%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 	padding-left: 0;
 	background-color: #666;
-	color: #FFF;	
+	color: #FFF;
+    position: absolute;
+    bottom: 0;
 }
 
 .mainFooter p {
 	width: 95%;
-	margin: 2% auto;
+	margin: 1% auto;
 }

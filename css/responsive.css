@@ -1,9 +1,20 @@
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1300px) {
+    .body {
+        width: 90%;
+        font-size: 95%;
+    }
     .mainHeader{
         display: inline-block;
+        width: 100%;
     }
     .mainHeader nav {
         margin: 0 auto 20px auto;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .mainHeader nav ul li {
+        width: 95px;
+        font-size: 80%;
     }
 }
 @media only screen and (max-width: 780px) {
@@ -21,6 +32,7 @@
 
     .mainHeader nav ul li {
         width: 100%;
+        font-size: 95%;
         text-align: center;
     }
     .mainHeader nav ul li:first-of-type{
@@ -33,16 +45,17 @@
         padding: 10px 25px;
         display: block;
     }
-
     .topcontent, .bottomcontent {
         margin-bottom: 5%;
     }
-
     .content {
         width: 100%;
     }
     .post-info {
         display: none;
+    }
+    .column {
+        width: 100%;
     }
     .sidebars{
         width: 100%;
@@ -54,5 +67,4 @@
     .top-sidebar p, .middle-sidebar p, .bottom-sidebar p{
         margin-right:40px;
     }
-
 }

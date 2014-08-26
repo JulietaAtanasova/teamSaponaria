@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Bubble Blog - Control Panel</title>
+    <title>Bubble Blog - New Post</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
     <link rel="stylesheet" href="css/article-generator.css" type="text/css"/>
@@ -14,6 +14,7 @@
 </head>
 
 <body class="body">
+<div class="wrapper">
 <?php
 require('cp-header.html');
 ?>
@@ -36,7 +37,7 @@ require('cp-header.html');
         <aside class="top-sidebar">
             <article>
                 <h3>Tags</h3>
-                <p><input type="text" name="addTag" placeholder="Add A Tag" /></p>
+                <p><input type="text" name="addTag" id="addTag" placeholder="Add A Tag" /></p>
                 <p></p>
             </article>
         </aside>
@@ -45,12 +46,12 @@ require('cp-header.html');
             <article>
                 <h3>Categories</h3>
                 <p><input type="text" name="addCategory" placeholder="Add Another Category" /></p>
-                <p><ul>
+                <ul>
                     <li><input type="checkbox">First Category</li>
                     <li><input type="checkbox">Second Category</li>
                     <li><input type="checkbox">Third Category</li>
                     <li><input type="checkbox">Fourth Category</li>
-                </ul></p>
+                </ul>
             </article>
         </aside>
 
@@ -69,5 +70,6 @@ require('cp-header.html');
 <?php
 include('cp-footer.html');
 ?>
+</div>
 </body>
 </html>

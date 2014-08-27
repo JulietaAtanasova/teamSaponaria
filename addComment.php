@@ -12,4 +12,7 @@ $text = $_POST['commentText'];
 $postId = $_POST['post_id'];
 
 $insert->comment($title, $text, $postId);
-echo "success!";
+echo "Comment successfully posted!";
+?>
+
+<body onload="timer=setTimeout(function(){ window.location='posts.php?postId=<?= $postId ?>';}, 3000)">

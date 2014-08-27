@@ -15,6 +15,11 @@ if ( isset( $_POST['article'] ) && isset($_POST['title'])) {
 	
 	$insert->action(2);
 	$insert->post($title, $article, $tags, $category);
+	$postId = $select->lastPost()['post_id'];
+	$allTags = $select->allTags();
+	foreach ($tags as $tag_name) {
+		$insert->tag($tag_name);
+	}
 	
 	echo "Article successfully posted!";
 }

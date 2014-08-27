@@ -44,8 +44,35 @@ class Select {
 			"LIMIT 0," . $count;
 		return $this->mysqlRun($query);
 	}
+	
 	function getComments($post_id) {
-		$query = "SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '" . $post_id . "'";
+		$query = "SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '" . $post_id . "' ORDER BY comment_date DESC";
+		return $this->mysqlRun($query);
+	}
+	
+	function categories($count) {
+		$query = 
+			"SELECT T0.category_name, T0.category_id " . 
+			"FROM category T0 " . 
+			"ORDER BY T0.category_id DESC " .
+			"LIMIT 0," . $count;
+		return $this->mysqlRun($query);
+	}
+	
+	function tags($count) {
+		$query = 
+			"SELECT * " . 
+			"FROM tag " . 
+			"ORDER BY tag_id DESC " .
+			"LIMIT 0," . $count;
+		return $this->mysqlRun($query);
+	}
+	
+	function allTags($tag_name) {
+		$query = 
+			"SELECT tag_name " . 
+			"FROM tag " . 
+			"WHERE tag_name = " . $tag_name;
 		return $this->mysqlRun($query);
 	}
 

@@ -53,12 +53,28 @@ class Insert {
 		$this->mysqlInsert('post', array(
 			'post_id' 			=> 'NULL',
 			'action_id' 		=> $this->lastAction(), // С $this взимаме метод от настоящия клас.
-			'user_id' 			=> '"' . $_SESSION['user_id'] . '"',
-			'post_name' 		=> "'" . $post_name. "'",
-			'post_text' 		=> "'" . $post_text. "'",
+			'user_id' 			=> $_SESSION['user_id'] ,
+			'post_name' 		=> $post_name ,
+			'post_text' 		=> $post_text ,
 			'post_date' 		=> 'NOW()',
 		));
-			
+		
+	}
+	
+	function tag($tag_name) {
+		$this->mysqlInsert('tag', array(
+			'action_id'			=> 5,
+			'tag_id' 			=> 'NULL',
+			'tag_name' 			=> $tag_name , 
+		));
+		
+	}
+	
+	function postTag($post_id, $tag_id) {
+		$this->mysqlInsert('post_tag', array(
+			'post_id' 			=> $post_id ,
+			'tag_id' 			=> $tag_id , 
+		));
 	}
 
 	// Вмъкване на нов потребител

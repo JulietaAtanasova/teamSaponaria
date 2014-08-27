@@ -1,3 +1,10 @@
+<?php 
+include 'class/Select.class.php';
+include 'class/Insert.class.php';
+
+$select = new Select();
+$insert = new Insert();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,13 +17,6 @@
 include 'include/auth.php';
 include('html/header.html');
 include('html/aside.html');
-
-mysql_set_charset('utf8');
-include 'class/Select.class.php';
-include 'class/Insert.class.php';
-
-$select = new Select();
-$insert = new Insert();
 ?>
 <section class="main"> <?php
 if (isset($_GET['postId'])) {

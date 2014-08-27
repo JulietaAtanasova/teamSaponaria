@@ -520,3 +520,115 @@
 1@26.08.2014@21:48:31@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'asd','sadasdas',NOW())
 1@26.08.2014@21:48:46@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),2)
 1@26.08.2014@21:48:46@INSERT INTO `post` (`post_id`,`action_id`,`user_id`,`post_name`,`post_text`,`post_date`) VALUES (NULL,(SELECT action_id FROM action WHERE USER_ID = 1 ORDER BY ACTION_ID DESC LIMIT 1),"1",'asd','sadasdas',NOW())
+@27.08.2014@08:36:32@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@08:39:40@INSERT INTO `action` (`action_id`,`user_id`,`action_date`,`action_type_id`) VALUES (NULL,1,NOW(),1)
+1@27.08.2014@08:39:40@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@08:40:07@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '26'
+1@27.08.2014@08:40:07@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '26'
+1@27.08.2014@08:40:15@INSERT INTO `comment` (`post_id`,`action_id`,`comment_author`,`comment_name`,`comment_text`,`comment_date`) VALUES (26,3,"1",'new comment','cmt',NOW())
+1@27.08.2014@08:40:18@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '26'
+1@27.08.2014@08:40:18@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '26'
+1@27.08.2014@08:41:01@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '26'
+1@27.08.2014@08:41:01@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '26'
+1@27.08.2014@08:42:11@INSERT INTO `comment` (`post_id`,`action_id`,`comment_author`,`comment_name`,`comment_text`,`comment_date`) VALUES (26,3,"1",'welp','srt',NOW())
+1@27.08.2014@08:42:14@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '26'
+1@27.08.2014@08:42:14@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '26'
+1@27.08.2014@08:43:57@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '26'
+1@27.08.2014@08:43:57@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '26' ORDER BY comment_date DESC
+1@27.08.2014@08:44:12@INSERT INTO `comment` (`post_id`,`action_id`,`comment_author`,`comment_name`,`comment_text`,`comment_date`) VALUES (26,3,"1",'new one','new one',NOW())
+1@27.08.2014@08:44:15@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '26'
+1@27.08.2014@08:44:15@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '26' ORDER BY comment_date DESC
+1@27.08.2014@08:44:25@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@08:44:29@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '27'
+1@27.08.2014@08:44:29@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '27' ORDER BY comment_date DESC
+1@27.08.2014@08:44:33@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@08:54:59@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@08:55:24@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@08:55:24@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@08:55:42@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@08:55:42@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@08:56:47@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@08:56:47@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@08:56:55@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@08:56:55@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@08:57:10@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@08:57:10@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@08:57:17@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@08:57:17@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@08:57:55@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:01:55@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:01:55@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:02:00@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:02:00@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '25'
+1@27.08.2014@09:02:00@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '25' ORDER BY comment_date DESC
+1@27.08.2014@09:02:03@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:02:03@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:02:24@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:02:24@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:09:29@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:09:29@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:14:17@SELECT T0.category_nameFROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:14:17@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:14:17@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:15:32@SELECT T0.category_nameFROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:15:32@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:15:32@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:15:32@SELECT T0.category_nameFROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:15:32@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:15:32@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:16:28@SELECT T0.category_name, T0.category_idFROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:16:28@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:16:28@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:16:29@SELECT T0.category_name, T0.category_idFROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:16:29@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:16:29@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:16:30@SELECT T0.category_name, T0.category_idFROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:16:30@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:16:30@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:16:46@SELECT T0.category_name, T0.category_id FROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:16:46@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:16:46@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:17:01@SELECT T0.category_name, T0.category_id FROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:17:01@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:17:01@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:17:29@SELECT T0.category_name, T0.category_id FROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:17:29@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:17:29@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:17:29@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:18:21@SELECT T0.category_name, T0.category_id FROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:18:21@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:18:21@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:18:21@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:18:22@SELECT T0.category_name, T0.category_id FROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:18:22@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:18:22@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:18:22@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:18:46@SELECT T0.category_name, T0.category_id FROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:18:46@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:18:46@SELECT * FROM tag ORDER BY tag_id DESC LIMIT 0,5
+1@27.08.2014@09:18:46@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:20:00@SELECT T0.category_name, T0.category_id FROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:20:00@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:20:00@SELECT * FROM tag ORDER BY tag_id DESC LIMIT 0,5
+1@27.08.2014@09:20:00@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:20:03@SELECT T0.category_name, T0.category_id FROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:20:03@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:20:03@SELECT * FROM tag ORDER BY tag_id DESC LIMIT 0,5
+1@27.08.2014@09:20:03@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:20:10@SELECT T0.category_name, T0.category_id FROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:20:10@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:20:10@SELECT * FROM tag ORDER BY tag_id DESC LIMIT 0,5
+1@27.08.2014@09:20:10@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:50:02@SELECT T0.category_name, T0.category_id FROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:50:02@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:50:02@SELECT * FROM tag ORDER BY tag_id DESC LIMIT 0,5
+1@27.08.2014@09:50:02@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10
+1@27.08.2014@09:50:18@SELECT T0.category_name, T0.category_id FROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:50:18@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:50:18@SELECT * FROM tag ORDER BY tag_id DESC LIMIT 0,5
+1@27.08.2014@09:50:18@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id WHERE T0.post_id = '26'
+1@27.08.2014@09:50:18@SELECT comment_date, comment_author, comment_text, comment_name FROM comment WHERE post_id = '26' ORDER BY comment_date DESC
+1@27.08.2014@09:50:20@SELECT T0.category_name, T0.category_id FROM category T0 ORDER BY T0.category_id DESC LIMIT 0,5
+1@27.08.2014@09:50:20@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,5
+1@27.08.2014@09:50:20@SELECT * FROM tag ORDER BY tag_id DESC LIMIT 0,5
+1@27.08.2014@09:50:20@SELECT T0.post_id, T0.post_text, T0.post_date, T0.post_name, T1.first_name, T1.last_name, T1.username FROM post T0 LEFT JOIN user T1 ON T0.user_id = T1.user_id ORDER BY T0.post_date DESC LIMIT 0,10

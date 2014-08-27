@@ -48,14 +48,14 @@ class Insert {
 	}
 
 	// Вмъкване на нова статия.
-	function post($post_name, $post_text, $category) {
+	function post($post_name, $post_text) {
 		
 		$this->mysqlInsert('post', array(
 			'post_id' 			=> 'NULL',
 			'action_id' 		=> $this->lastAction(), // С $this взимаме метод от настоящия клас.
-			'user_id' 			=> $_SESSION['user_id'] ,
-			'post_name' 		=> $post_name ,
-			'post_text' 		=> $post_text ,
+			'user_id' 			=> $_SESSION['username'] ,
+			'post_name' 		=> "'" . $post_name. "'",
+			'post_text' 		=> "'" . $post_text. "'",
 			'post_date' 		=> 'NOW()',
 		));
 		
@@ -97,7 +97,7 @@ class Insert {
 		$this->mysqlInsert('comment', array(
 		'post_id' 			=> $post_id,
 			'action_id' 		=> '3',
-			'comment_author' 	=> '"' . $_SESSION['user_id'] . '"',
+			'comment_author' 	=> '"' . $_SESSION['username'] . '"',
 			'comment_name' 		=> "'" . $comment_name. "'",
 			'comment_text' 		=> "'" . $comment_text. "'",
 			'comment_date' 		=> 'NOW()',

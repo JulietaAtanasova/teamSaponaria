@@ -64,3 +64,8 @@ span{
     width: 50px;
     float: left;
 }
+
+form > input.post {
+width: 120px;
+height: 40px;
+}

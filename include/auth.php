@@ -3,8 +3,8 @@
 session_start();
 
 if (!isset($_SESSION['logged'])) {
-
-    echo '<p style="color:white">The user has not signed in. Here we should put Sign up form. The file is include/auth.php</p>';
+	?><body onload="timer=setTimeout(function(){ window.location='index.php';}, 1000)"><?php
+    die('Login!');
 
 }
 

@@ -1,5 +1,4 @@
 <?php
-include('html/header.html');
 include 'include/auth.php';
 mysql_set_charset('utf8');
 include 'class/Select.class.php';
@@ -15,4 +14,4 @@ $insert->comment($title, $text, $postId);
 echo "Comment successfully posted!";
 ?>
 
-<body onload="timer=setTimeout(function(){ window.location='posts.php?postId=<?= $postId ?>';}, 3000)">
+<body onload="timer=setTimeout(function(){ window.location='posts.php?postId=<?= $postId ?>';}, 1000)">

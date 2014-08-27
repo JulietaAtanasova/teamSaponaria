@@ -34,11 +34,10 @@ if (isset($_POST['signUp']) && $_POST['signUp'] == "Sign Up") {
 		die ('</center></body></html>');
     } else {
 		
-		$insert->action(5);
-		$insert->user($first_name, $last_name, $username, $password, $email);
+		
+		@$insert->user($first_name, $last_name, $username, $password, $email);
 
-		echo 'Успешна регистрация! Можете да влезете в профила си от <a href="index.php">тук</a>.<br /> ТУК МОЖЕ ДА ПОМИСЛИТЕ КАК ДА ИЗЛИЗА!';
-		die();
+		?><body onload="timer=setTimeout(function(){ window.location='main.php';}, 1)"><?php
 	}
 }
 ?>
@@ -59,7 +58,7 @@ if (isset($_POST['signUp']) && $_POST['signUp'] == "Sign Up") {
         <input type="submit" value="Log In"/>
     </form>
     <div id="container">
-        <img src="./images/cooltext1684135702.png" alt="logo"/>
+        <img src="./images/cooltext1687891902.png" alt="logo"/>
         <div id="bg">
             <form action="#" method="post">
                 <input type="text" name="first_name" placeholder="First name" />

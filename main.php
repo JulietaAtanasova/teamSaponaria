@@ -1,32 +1,34 @@
-<?php
+<?php mysql_set_charset('utf8');
 include 'include/auth.php';
-include 'include/db.php';
-include 'class/Insert.class.php';
 include 'class/Select.class.php';
+include 'class/Insert.class.php';
 
-if (!class_exists('Select'))  $select = new Select(); 
-if (!class_exists('Insert'))  $insert = new Insert(); 
-mysql_set_charset('utf8');
+$select = new Select();
+$insert = new Insert();
 ?>
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Bubble Blog</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/article-generator.css"/>
-    <script src="js/articleGenerator.js"></script>
+<head>
+<meta charset="utf-8"/>
+<title>Bubble Blog</title>
+<link href="css/posts.css" rel="stylesheet"/>
 </head>
 <body>
-    <div id="wrapper">
-        <?php include('html/header.html');
-        include('html/aside.html'); ?>
-        <div id="main">
+<div id="wrapper">
+<?php 
+?>
+    <section class="header"><?php include('html/header.html'); ?></section>
+    <section class="content">
+<?php
+include('html/aside.html');
+?>
+<section class="main"> 
 <?php
 	include 'allPosts.php';
-?>
-        </div>
-        <?php include('html/footer.html'); ?>
-    </div>
+?> </section>
+</section>
+<?php include('html/footer.html'); ?>
+</div>
 </body>
+</html>
 </html>

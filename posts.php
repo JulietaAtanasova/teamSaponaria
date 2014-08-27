@@ -1,4 +1,4 @@
-<?php 
+<?php mysql_set_charset('utf8');
 include 'class/Select.class.php';
 include 'class/Insert.class.php';
 
@@ -16,11 +16,12 @@ $insert = new Insert();
 <div id="wrapper">
 <?php 
 include 'include/auth.php';
-include('html/aside.html');
-mysql_set_charset('utf8');
 ?>
-<section class="header"><?php include('html/header.html'); ?></section>
-<section class="content">
+    <section class="header"><?php include('html/header.html'); ?></section>
+    <section class="content">
+<?php
+include('html/aside.html');
+?>
 <section class="main"> <?php
 if (isset($_GET['postId'])) {
 	$postId = $_GET['postId'];
@@ -28,14 +29,15 @@ if (isset($_GET['postId'])) {
 	$row = mysql_fetch_array($result);
 	?>
 	<h3 class="articleTitle"><?= $row['post_name']; ?></h3>
-	<p class="postInfo">Posted by <?= $row['first_name'] . ' ' . $row['last_name'];?> on <time><?= $row['post_date']; ?></time></p>
+	<em><p class="postInfo">Posted by <?= $row['first_name'] . ' ' . $row['last_name'];?> on <time><?= $row['post_date']; ?></time></p></em>
 	<p class="postContent"><?= $row['post_text']; ?></p>
 	<?php 
 	include "comments.php";
 }
 ?> </section>
-    </section>
-    <section class="footer"><?php include('html/footer.html'); ?></section>
+</section>
+<?php include('html/footer.html'); ?>
 </div>
 </body>
+</html>
 </html>

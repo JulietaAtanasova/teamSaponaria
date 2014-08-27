@@ -7,3 +7,4 @@ unset($_SESSION['email']);
 unset($_SESSION['first_name']);
 unset($_SESSION['last_name']);
 unset($_SESSION['username']);
+?><body onload="timer=setTimeout(function(){ window.location='index.php';}, 1000)">

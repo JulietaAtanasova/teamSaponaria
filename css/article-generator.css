@@ -109,3 +109,9 @@ input#image {
     /*background-color: #666666;*/
     background-color:rgba(102, 102, 102, 0.1);
 }
+
+
+form > input.post {
+width: 120px;
+height: 30px;
+}

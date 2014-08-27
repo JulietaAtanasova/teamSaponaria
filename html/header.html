@@ -1,4 +1,15 @@
 <header>
-    <img src="../images/Bubble_Blog_Icon_pink.png" alt="logo"/>
-    <img src="../images/logo.png" alt="logo"/>
+    <a href="main.php"><img src="images/Bubble_Blog_Icon_pink.png" alt="logo"/></a>
+    <a href="main.php"><img src="images/logo.png" alt="logo"/></a>
+	<?php 
+		if (isset($_SESSION['logged'])) {
+			?><span class="welcome">Hello, <b><?= $_SESSION['username']; ?></b>!</span> <?php
+			if ($_SESSION['user_type_id'] === 2) { 
+			?> 
+			<a href="control-panel.php"><input type="button" value="Control Panel" class="CP" /></a> 
+			<?php } ?>
+			<a href="logout.php"><input type="button" value="Log Out" class="logout" /></a>			
+		<?php
+		}
+	?>
 </header>

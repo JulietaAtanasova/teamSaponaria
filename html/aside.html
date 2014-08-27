@@ -7,11 +7,13 @@ $select = new Select();
     </aside>
     <aside class="sidebar">
         <h2>Categories</h2>
+		<ul>
 		<?php
 		$result = $select->categories(5);
 		while ($row = mysql_fetch_array($result)): ?>
 			<li><a href="#"><?= $row['category_name'] ?></a></li>
 		<?php endwhile; ?>
+		</ul>
     </aside>
     <aside class="sidebar">
         <h2>Latest Posts:</h2>

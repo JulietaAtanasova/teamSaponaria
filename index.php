@@ -38,15 +38,12 @@ if (isset($_POST['submit'])) {
 		$insert->action(1);
 		
 		header('Refresh: 0; URL=main.php');
-		echo '<p>Успешна регистрация!</p>';
-		echo '<p>Ако Вашият броузър не ви прехвърли автоматично, моля ' .
-			'<a href="main.php">натиснете тук</a>.</p>';
 		mysql_free_result($result);
 		mysql_close($db);
 		die();
 
 	} else {
-		die('WRONG!');
+		die('Wrong username or password!');
 	}
 }
 ?>

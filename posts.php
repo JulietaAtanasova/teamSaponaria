@@ -2,15 +2,18 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-
+<title>Bubble Blog</title>
+<link href="css/posts.css" rel="stylesheet"/>
 </head>
 <body>
-<div id="#wrapper">
+<div id="wrapper">
 <?php 
 include 'include/auth.php';
-include('html/header.html');
+?>
+    <section class="header"><?php include('html/header.html'); ?></section>
+    <section class="content">
+<?php
 include('html/aside.html');
-
 mysql_set_charset('utf8');
 include 'class/Select.class.php';
 include 'class/Insert.class.php';
@@ -31,7 +34,8 @@ if (isset($_GET['postId'])) {
 	include "comments.php";
 }
 ?> </section>
-<?php include('html/footer.html'); ?>
+    </section>
+    <section class="footer"><?php include('html/footer.html'); ?></section>
 </div>
 </body>
 </html>

@@ -66,7 +66,7 @@ if (isset($_POST['submit'])) {
     </form>
 	<!--a href="registration.php" style="font-size:20px; color:white;">Sign Up!</a-->
     <div id="container">
-        <img src="./images/cooltext1684135702.png" alt="logo"/>
+        <img src="./images/cooltext1687891902.png" alt="logo"/>
         <div id="bg">
             <form action="#" method="post">
                 <input type="text" name="username" placeholder="Username" />

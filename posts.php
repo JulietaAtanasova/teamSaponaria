@@ -9,15 +9,18 @@ $insert = new Insert();
 <html>
 <head>
 <meta charset="utf-8"/>
-
+<title>Bubble Blog</title>
+<link href="css/posts.css" rel="stylesheet"/>
 </head>
 <body>
-<div id="#wrapper">
+<div id="wrapper">
 <?php 
 include 'include/auth.php';
-include('html/header.html');
 include('html/aside.html');
+mysql_set_charset('utf8');
 ?>
+<section class="header"><?php include('html/header.html'); ?></section>
+<section class="content">
 <section class="main"> <?php
 if (isset($_GET['postId'])) {
 	$postId = $_GET['postId'];
@@ -31,7 +34,8 @@ if (isset($_GET['postId'])) {
 	include "comments.php";
 }
 ?> </section>
-<?php include('html/footer.html'); ?>
+    </section>
+    <section class="footer"><?php include('html/footer.html'); ?></section>
 </div>
 </body>
 </html>
